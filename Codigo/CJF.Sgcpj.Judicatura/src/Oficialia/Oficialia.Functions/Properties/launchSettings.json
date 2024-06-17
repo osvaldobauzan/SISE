@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Function.Promociones": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7297"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 33794,
+      "useSSL": false
+    }
+  }
+}

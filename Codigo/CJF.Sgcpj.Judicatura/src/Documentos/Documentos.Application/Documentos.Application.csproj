@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    
+    <ItemGroup>
+        <PackageReference Include="Aspose.PDF.Drawing" Version="23.4.0" />
+        <PackageReference Include="Aspose.Words" Version="23.11.0" />
+        <PackageReference Include="BouncyCastle.Cryptography" Version="2.3.0">
+            <Aliases>BC</Aliases>
+        </PackageReference>
+        <PackageReference Include="CJF.FirmaUtil" Version="3.2.1" />
+        <PackageReference Include="MediatR" Version="12.1.1" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+        <PackageReference Include="System.Security.Cryptography.Pkcs" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Actuaria\Actuaria.Application\Actuaria.Application.csproj" />
+        <ProjectReference Include="..\..\Actuaria\Actuaria.Infrastructure\Actuaria.Infrastructure.csproj" />
+        <ProjectReference Include="..\..\Comunes\Application\Common.Application.csproj" />
+        <ProjectReference Include="..\..\Comunes\Infrastructure\Common.Infrastructure.csproj" />
+        <ProjectReference Include="..\..\Tramite\Tramite.Application\Tramite.Application.csproj" />
+        <ProjectReference Include="..\..\Oficialia\Oficialia.Application\Oficialia.Application.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Common\Model\NewFolder\" />
+        <Folder Include="Properties\" />
+    </ItemGroup>
+    
+</Project>

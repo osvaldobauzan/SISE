@@ -1,0 +1,83 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>CJF.Sgcpj.Judicatura.Application.IntegrationTests</RootNamespace>
+    <AssemblyName>CJF.Sgcpj.Judicatura.Application.IntegrationTests</AssemblyName>
+
+    <IsPackable>false</IsPackable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+    <None Remove="local.settings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="local.settings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="6.12.0" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+    <PackageReference Include="PolyCache" Version="1.0.1" />
+    <PackageReference Include="xunit" Version="2.7.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+
+      <PackageReference Include="Azure.Identity" Version="1.11.4" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.AzureAppConfiguration" Version="7.1.0" />
+      <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="6.0.25" />
+      <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" Version="3.2.0" />
+      <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi" Version="1.5.1" />
+      <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core" Version="1.5.1" />
+
+    <PackageReference Include="Moq" Version="4.20.70" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.7.0" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Actuaria\Actuaria.Functions\Actuaria.Functions.csproj" />
+    <ProjectReference Include="..\..\src\Alertas\Alertas.Functions\Alertas.Functions.csproj" />
+    <ProjectReference Include="..\..\src\Catalogos\Catalogos.Functions\Catalogos.Functions.csproj" />
+    <ProjectReference Include="..\..\src\Comunes\Application\Common.Application.csproj" />
+    <ProjectReference Include="..\..\src\Comunes\Common.Functions\Common.Functions.csproj" />
+    <ProjectReference Include="..\..\src\ExpedienteElectronico\ExpedienteElectronico.Application\ExpedienteElectronico.Application.csproj" />
+    <ProjectReference Include="..\..\src\ExpedienteElectronico\ExpedienteElectronico.Functions\ExpedienteElectronico.Functions.csproj" />
+    <ProjectReference Include="..\..\src\ExpedienteElectronico\ExpedienteElectronico.Infrastructure\ExpedienteElectronico.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\LibretaOficios\LibretaOficios.Functions\LibretaOficios.Functions.csproj" />
+    <ProjectReference Include="..\..\src\Oficialia\Oficialia.Functions\Oficialia.Functions.csproj" />
+    <ProjectReference Include="..\..\src\Proyectos\Proyectos.Functions\Proyectos.Functions.csproj" />
+    <ProjectReference Include="..\..\src\Seguimiento\Seguimiento.Functions\Seguimiento.Functions.csproj" />
+    <ProjectReference Include="..\..\src\Seguridad\Seguridad.Functions\Seguridad.Functions.csproj" />
+    <ProjectReference Include="..\..\src\Sentencias\Sentencias.Functions\Sentencias.Functions.csproj" />
+    <ProjectReference Include="..\..\src\Tramite\Tramite.Functions\Tramite.Functions.csproj" />
+    <ProjectReference Include="..\..\src\Usuarios\Usuarios.Functions\Usuarios.Functions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\Hola.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\test.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+
+
+</Project>

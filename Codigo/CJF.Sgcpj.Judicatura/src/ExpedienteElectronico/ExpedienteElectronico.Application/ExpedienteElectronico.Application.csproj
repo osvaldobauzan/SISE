@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="SonarAnalyzer.CSharp" Version="9.21.0.86780">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Comunes\Application\Common.Application.csproj" />
+  </ItemGroup>
+    <ItemGroup>
+        <AssemblyAttribute Include="CJF.Sgcpj.Judicatura.Common.Application.Common.Security.AuthorizeAttribute">
+        </AssemblyAttribute>
+    </ItemGroup>
+</Project>

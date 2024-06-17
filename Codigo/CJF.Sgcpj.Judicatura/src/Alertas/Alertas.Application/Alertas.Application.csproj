@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <TargetFramework>net6.0</TargetFramework>
+        <ServerGarbageCollection>true</ServerGarbageCollection>
+        <CheckEolTargetFramework>false</CheckEolTargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <AssemblyName>CJF.Sgcpj.Judicatura.Alertas.Application</AssemblyName>
+        <RootNamespace>CJF.Sgcpj.Judicatura.Alertas.Application</RootNamespace>
+        <NoWarn>$(NoWarn);1701;1702;NU1701;1571;1723;1710;1573;1572;0414;0169;1591;0219;8002;AD0001;8618;8765;8604;8625;8601;8600;8062;8619;8602</NoWarn>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+        <PackageReference Include="Azure.Data.Tables" Version="12.8.3" />
+        <PackageReference Include="DocumentFormat.OpenXml" Version="3.0.1" />
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+        <PackageReference Include="Microsoft.Azure.WebJobs.Core" Version="3.0.39" />
+        <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.SignalRService" Version="1.13.0" />
+        <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="SonarAnalyzer.CSharp" Version="9.21.0.86780">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+    <ItemGroup>
+        <AssemblyAttribute Include="CJF.Sgcpj.Judicatura.Common.Application.Common.Security.AuthorizeAttribute">
+        </AssemblyAttribute>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\Comunes\Application\Common.Application.csproj" />
+        <ProjectReference Include="..\Alertas.Domain\Alertas.Domain.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Alertas\Interfaces\" />
+    </ItemGroup>
+</Project>

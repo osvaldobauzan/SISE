@@ -1,0 +1,37 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=CJF.Sgcpj.JudicaturaDb;Trusted_Connection=True;MultipleActiveResultSets=true;",
+    "nombreArchivoEjemplo": "\\\\LAPTOP\\cfjfiles\\archivo_de_prueba.pdf",
+    "nasRutaBase": "\\\\CHIAPMOBGESCOBA\\sharedtemp\\",
+    "habilitarCache": false,
+    "duracionCache": "2",
+    "NasActivo": false,
+    "IpNas": "127.0.0.1",
+    "UsuarioNas": "sise",
+    "PassNas": "@Aquazai5Teib",
+    "extensionValidaArchivos": ".pdf",
+    "carpetaCompartida": "sharedtemp",
+    "tamanioArchivo": 6
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=CJF.Sgcpj.JudicaturaDb;Trusted_Connection=True;MultipleActiveResultSets=true;"
+  },
+  "Host": {
+    "CORS": "*"
+  },
+  "CacheConfig": {
+    "DefaultCacheTime": 60,
+    "ShortTermCacheTime": 3,
+    "BundledFilesCacheTime": 120
+  },
+  "DistributedCacheConfig": {
+    "DistributedCacheType": "redis",
+    "Enabled": true,
+    "ConnectionString": "127.0.0.1:6379,ssl=False",
+    "SchemaName": "dbo",
+    "TableName": "DistributedCache"
+  }
+}

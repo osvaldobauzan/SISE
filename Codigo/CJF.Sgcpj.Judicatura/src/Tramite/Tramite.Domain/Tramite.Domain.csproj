@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <TargetFramework>net6.0</TargetFramework>
+        <ServerGarbageCollection>true</ServerGarbageCollection>
+        <CheckEolTargetFramework>false</CheckEolTargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <AssemblyName>CJF.Sgcpj.Judicatura.Tramite.Domain</AssemblyName>
+        <RootNamespace>CJF.Sgcpj.Judicatura.Tramite.Domain</RootNamespace>
+        <NoWarn>$(NoWarn);1701;1702;NU1701;1571;1723;1710;1573;1572;0414;0169;1591;0219;8002;AD0001;8618;8765;8604;8625;8601;8600;8062;8619;8602</NoWarn>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Azure.Data.Tables" Version="12.8.3" />
+        <PackageReference Include="MediatR" Version="12.1.1" />
+        <PackageReference Include="SonarAnalyzer.CSharp" Version="9.21.0.86780">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\Comunes\Domain\Common.Domain.csproj" />
+    </ItemGroup>
+</Project>

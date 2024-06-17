@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Sentencias\Consultas\NewFolder1\**" />
+    <EmbeddedResource Remove="Sentencias\Consultas\NewFolder1\**" />
+    <None Remove="Sentencias\Consultas\NewFolder1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Comunes\Application\Common.Application.csproj" />
+    <ProjectReference Include="..\..\Proyectos\Proyectos.Application\Proyectos.Application.csproj" />
+    <ProjectReference Include="..\Sentencias.Domain\Sentencias.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="CJF.Sgcpj.Judicatura.Common.Application.Common.Security.AuthorizeAttribute">
+    </AssemblyAttribute>
+  </ItemGroup>    
+
+</Project>

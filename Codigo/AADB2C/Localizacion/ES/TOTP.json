@@ -1,0 +1,417 @@
+{
+    "LocalizedStrings": [
+      {
+        "ElementType": "ClaimType",
+        "ElementId": "QrCodeVerifyInstruction",
+        "StringId": "DisplayName",
+        "Override": false,
+        "Value": "Escriba el código de verificación de la aplicación autenticadora."
+      },
+      {
+        "ElementType": "ClaimType",
+        "ElementId": "otpCode",
+        "StringId": "DisplayName",
+        "Override": false,
+        "Value": "Escriba su código"
+      },
+      {
+        "ElementType": "ClaimType",
+        "ElementId": "otpCode",
+        "StringId": "UserHelpText",
+        "Override": true,
+        "Value": "Es un factor de doble autenticación como medida de seguridad que sirve para verificar la identidad de la persona que quiere ingresar a una cuenta. Busca Microsoft Authenticator en cualquier app store."
+      },
+      {
+        "ElementType": "DisplayControl",
+        "ElementId": "authenticatorAppIconControl",
+        "StringId": "instruction_text",
+        "Override": false,
+        "Value": "Una vez que haya descargado la aplicación Authenticator, puede usar cualquiera de los métodos siguientes para continuar con la inscripción."
+      },
+      {
+        "ElementType": "DisplayControl",
+        "ElementId": "authenticatorAppIconControl",
+        "StringId": "title_text",
+        "Override": false,
+        "Value": "Descargue Microsoft Authenticator mediante los vínculos de descarga para iOS y Android o use cualquier otra aplicación autenticadora de su elección."
+      },
+      {
+        "ElementType": "DisplayControl",
+        "ElementId": "authenticatorInfoControl",
+        "StringId": "account_name",
+        "Override": false,
+        "Value": "Nombre de cuenta:"
+      },
+      {
+        "ElementType": "DisplayControl",
+        "ElementId": "authenticatorInfoControl",
+        "StringId": "collapse_text",
+        "Override": false,
+        "Value": "¿Sigue teniendo problemas?"
+      },
+      {
+        "ElementType": "DisplayControl",
+        "ElementId": "authenticatorInfoControl",
+        "StringId": "display_prefix",
+        "Override": false,
+        "Value": "Secreto:"
+      },
+      {
+        "ElementType": "DisplayControl",
+        "ElementId": "authenticatorInfoControl",
+        "StringId": "title_text",
+        "Override": false,
+        "Value": "Escribe manualmente los detalles de la cuenta:"
+      },
+      {
+        "ElementType": "DisplayControl",
+        "ElementId": "totpQrCodeControl",
+        "StringId": "continue_button",
+        "Override": false,
+        "Value": "Continuar"
+      },
+      {
+        "ElementType": "DisplayControl",
+        "ElementId": "totpQrCodeControl",
+        "StringId": "info_msg",
+        "Override": false,
+        "Value": "Con la aplicación, digitalice este código QR y haga clic en \"Continuar\"."
+      },
+      {
+        "ElementType": "DisplayControl",
+        "ElementId": "totpQrCodeControl",
+        "StringId": "link_text",
+        "Override": false,
+        "Value": "¿No puede digitalizar? Pruebe esto"
+      },
+      {
+        "ElementType": "DisplayControl",
+        "ElementId": "totpQrCodeControl",
+        "StringId": "title_text",
+        "Override": false,
+        "Value": "Digitalización del código QR"
+      },
+      {
+        "ElementType": "ErrorMessage",
+        "ElementId": null,
+        "StringId": "UserMessageIfDuplicateOTPCodeEntered",
+        "Override": false,
+        "Value": "Se especificó un código de verificación duplicado. Vuelva a intentarlo."
+      },
+      {
+        "ElementType": "ErrorMessage",
+        "ElementId": null,
+        "StringId": "UserMessageIfIncorrectOTPCodeEntered",
+        "Override": false,
+        "Value": "Se ha escrito un código incorrecto. Vuelva a intentarlo."
+      },
+      {
+        "ElementType": "ErrorMessage",
+        "ElementId": null,
+        "StringId": "UserMessageIfInvalidSession",
+        "Override": false,
+        "Value": "La sesión de comprobación especificada no es válida o puede haber expirado."
+      },
+      {
+        "ElementType": "ErrorMessage",
+        "ElementId": null,
+        "StringId": "UserMessageIfMaxAllowedDevicesReached",
+        "Override": false,
+        "Value": "Se alcanzó el número máximo de dispositivos permitidos. Póngase en contacto con el administrador."
+      },
+      {
+        "ElementType": "ErrorMessage",
+        "ElementId": null,
+        "StringId": "UserMessageIfMaxAllowedOTPCodeRetryReached",
+        "Override": false,
+        "Value": "Se ha escrito un código incorrecto demasiadas veces. Vuelva a intentarlo más tarde."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "alert_message",
+        "Override": false,
+        "Value": "¿Está seguro de que quiere cancelar la introducción de los detalles?"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "alert_no",
+        "Override": false,
+        "Value": "No"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "alert_title",
+        "Override": false,
+        "Value": "Cancelar la introducción de los detalles"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "alert_yes",
+        "Override": false,
+        "Value": "Sí"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "button_cancel",
+        "Override": false,
+        "Value": "Cancelar"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "button_continue",
+        "Override": false,
+        "Value": "Comprobar"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "cancel_message",
+        "Override": false,
+        "Value": "El usuario ha cancelado la introducción de información afirmada por él mismo"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "day",
+        "Override": false,
+        "Value": "Día"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "disclaimer_link_1_text",
+        "Override": false,
+        "Value": ""
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "disclaimer_link_1_url",
+        "Override": false,
+        "Value": ""
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "disclaimer_link_2_text",
+        "Override": false,
+        "Value": ""
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "disclaimer_link_2_url",
+        "Override": false,
+        "Value": ""
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "disclaimer_msg_intro",
+        "Override": false,
+        "Value": ""
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "error_fieldIncorrect",
+        "Override": false,
+        "Value": "Hay uno o varios campos rellenados de forma incorrecta. Compruebe las entradas y vuelva a intentarlo."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "error_passwordEntryMismatch",
+        "Override": false,
+        "Value": "Los campos de entrada de contraseña no coinciden. Escriba la misma contraseña en ambos campos y vuelva a intentarlo."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "error_requiredFieldMissing",
+        "Override": false,
+        "Value": "Falta un campo obligatorio. Rellene todos los campos necesarios y vuelva a intentarlo."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "heading",
+        "Override": false,
+        "Value": "Suscribirse"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "helplink_text",
+        "Override": true,
+        "Value": "¿Qué es la aplicación autenticadora?"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "initial_intro",
+        "Override": false,
+        "Value": "Proporcione los siguientes detalles."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "month",
+        "Override": false,
+        "Value": "Mes"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "months",
+        "Override": false,
+        "Value": "Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "preloader_alt",
+        "Override": false,
+        "Value": "Espere"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "required_field",
+        "Override": false,
+        "Value": "Esta información es obligatoria."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_but_default",
+        "Override": false,
+        "Value": "Predeterminado"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_but_edit",
+        "Override": false,
+        "Value": "Cambiar correo electrónico"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_but_resend",
+        "Override": false,
+        "Value": "Enviar nuevo código"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_but_send",
+        "Override": false,
+        "Value": "Enviar código de comprobación"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_but_verify",
+        "Override": false,
+        "Value": "Comprobar código"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_fail_code_expired",
+        "Override": false,
+        "Value": "El código ha expirado. Solicite otro nuevo."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_fail_no_retry",
+        "Override": false,
+        "Value": "Ha realizado demasiados intentos incorrectos. Vuelva a intentarlo más tarde."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_fail_retry",
+        "Override": false,
+        "Value": "Ese código es incorrecto. Inténtelo de nuevo."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_fail_server",
+        "Override": false,
+        "Value": "Tenemos problemas para comprobar la dirección de correo electrónico. Escriba una dirección de correo electrónico válida y vuelva a intentarlo."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_fail_throttled",
+        "Override": false,
+        "Value": "Ha habido demasiadas solicitudes para comprobar esta dirección de correo electrónico. Espere un poco y vuelva a intentarlo."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_incorrect_format",
+        "Override": false,
+        "Value": "El formato no es correcto."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_info_msg",
+        "Override": false,
+        "Value": "Se ha enviado el código de verificación a su Bandeja de entrada. Cópielo en el siguiente cuadro de entrada."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_input",
+        "Override": false,
+        "Value": "Código de verificación"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_intro_msg",
+        "Override": false,
+        "Value": "La comprobación es obligatoria. Haga clic en el botón Enviar."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_sent",
+        "Override": false,
+        "Value": "El código de verificación se envió a:"
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "ver_success_msg",
+        "Override": false,
+        "Value": "Dirección de correo electrónico comprobada. Puede continuar."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "verifying_blurb",
+        "Override": false,
+        "Value": "Espere mientras procesamos la información."
+      },
+      {
+        "ElementType": "UxElement",
+        "ElementId": null,
+        "StringId": "year",
+        "Override": false,
+        "Value": "Año"
+      }
+    ]
+  }

@@ -1,0 +1,67 @@
+{
+  "LocalizedStrings": [
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "AADRequestsThrottled",
+      "Override": true,
+      "Value": "Ocurrió un error al ingresar, por favor comuníquese al #301 extensión 6050. (CODIGO: 06)"
+    },
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "DefaultMessage",
+      "Override": true,
+      "Value": "Nombre de usuario o contraseña no válidos. (CODIGO: 03)"
+    },
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "UserMessageIfClaimsPrincipalDoesNotExist",
+      "Override": true,
+      "Value": "Nombre de usuario o contraseña no válidos. (CODIGO: 07)"
+    },
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "UserMessageIfInvalidPassword",
+      "Override": true,
+      "Value": "Nombre de usuario o contraseña no válidos. (CODIGO: 01)"
+    },
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "UserMessageIfOldPasswordUsed",
+      "Override": true,
+      "Value": "Ocurrió un error al ingresar, por favor comuníquese al #301 extensión 6050. (CODIGO: 08)"
+    },
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "UserMessageIfPasswordExpired",
+      "Override": true,
+      "Value": "Ocurrió un error al ingresar, por favor comuníquese al #301 extensión 6050. (CODIGO: 04)"
+    },
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "UserMessageIfUserAccountDisabled",
+      "Override": true,
+      "Value": "Ocurrió un error al ingresar, por favor comuníquese al #301 extensión 6050. (CODIGO: 02)"
+    },
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "UserMessageIfUserAccountLocked",
+      "Override": true,
+      "Value": "Ocurrió un error al ingresar, por favor comuníquese al #301 extensión 6050. (CODIGO: 05)"
+    },
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "forgotpassword_link",
+      "Override": true,
+      "Value": ""
+    }
+  ]
+}

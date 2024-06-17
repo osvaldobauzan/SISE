@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Usuarios.Functions": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7296"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 33897,
+      "useSSL": false
+    }
+  }
+}
